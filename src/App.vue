@@ -17,4 +17,10 @@ const Header = defineAsyncComponent(() => import("./components/Header.vue"));
 const Layout = defineAsyncComponent(() => import("./components/Layout.vue"));
 </script>
 
-<style scoped></style>
+<style scoped>
+/* main{
+  background-image: url("./pokemon.jpeg");
+  background-position: cover;
+  transition: 0.4%;
+} */
+</style>

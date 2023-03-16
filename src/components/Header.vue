@@ -5,6 +5,7 @@
         </div>
 
         <ul class="flex md:items-center md:flex-row flex-col md:space-x-5 md:space-y-0 space-y-5 mt-12 md:mt-0">
+            <!-- <NavLink href="/pokemons">Pokemons</NavLink> -->
             <NavLink href="/">Sign In</NavLink>
             <NavLink href="/signup">Sign Up</NavLink>
         </ul>
