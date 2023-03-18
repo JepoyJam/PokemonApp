@@ -1,4 +1,8 @@
 <template>
+<video autoplay loop muted class="video"> 
+    <source src="./assets/background-live-wallpaper.mp4" type="video/webm"/>
+    <source src="./assets/background-live-wallpaper.mp4" type="video/mp4"/>
+  </video>  
   <div>
     <Header />
     <Layout>
@@ -18,9 +22,16 @@ const Layout = defineAsyncComponent(() => import("./components/Layout.vue"));
 </script>
 
 <style scoped>
-/* main{
-  background-image: url("./pokemon.jpeg");
-  background-position: cover;
-  transition: 0.4%;
-} */
+video{
+z-index: -1000;
+margin-top: 460px;
+margin-left: 720px;
+width: 100vw;
+height: 100vh;
+position: absolute;
+-webkit-transform: translate(-50%, -50%);
+-moz-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+}
 </style>
