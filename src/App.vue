@@ -24,14 +24,15 @@ const Layout = defineAsyncComponent(() => import("./components/Layout.vue"));
 <style scoped>
 video{
 z-index: -1000;
-margin-top: 460px;
+margin-top: 410px;
 margin-left: 720px;
 width: 100vw;
 height: 100vh;
-position: absolute;
+position: fixed;
 -webkit-transform: translate(-50%, -50%);
 -moz-transform: translate(-50%, -50%);
 -ms-transform: translate(-50%, -50%);
 transform: translate(-50%, -50%);
+object-fit: cover;
 }
 </style>
