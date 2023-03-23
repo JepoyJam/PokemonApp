@@ -9,7 +9,25 @@
  import Userform from "@/components/Userform.vue"
  import client from "@/assets/apiclient.js"
 //  import {ref, onMounted} from "vue"
-//  import axios from "axios"
+ import axios from "axios"
+
+
+
+function Register(user){
+  axios.post(client, user)
+  .then(res => {
+  console.log("res data", res)
+  })
+  .catch(errors =>{
+      console.log("error", errors)
+ })
+  }
+
+
+
+ 
+//  .then(Register => this.RegisterData, Register.data)
+//  .catch(errors => {console.log("error", errors)})
 
 // const register = ref("Register")
 

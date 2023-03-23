@@ -3,13 +3,16 @@
         <div>
             <h1 class="text-gray-50 text-2xl font-semibold">Gotta Catch 'Em All!</h1>
         </div>
-
+        <!-- <div v-if="" class="flex">
+            <input type="text" class="text-sm font-semibold rounded-sm text-center"/>
+            <button class= "mx-2 border pr-1.5 pl-1.5 rounded-sm">Search</button>  
+        </div> -->
         <ul class="flex md:items-center md:flex-row flex-col md:space-x-5 md:space-y-0 space-y-5 mt-12 md:mt-0">
             <!-- <NavLink href="/pokemons">Pokemons</NavLink> -->
             <NavLink href="/">Sign In</NavLink>
             <NavLink href="/signup">Sign Up</NavLink>
         </ul>
-    </header>
+    </header>   
 </template>
 
 <script setup>
@@ -18,7 +21,3 @@ import {defineAsyncComponent} from 'vue'
 // lazy load the NavLink component
 const NavLink = defineAsyncComponent(() => import('./NavLink.vue'))
 </script>
-
-<style lang="scss" scoped>
-
-</style>

@@ -13,14 +13,14 @@
         <span> Primary Type</span>
         <span>{{ pokemonDetails?.type1 }}</span>
       </div>
-      <div class="flex items-center space-x-4">
+      <div class="flex items-center space-x-4">   
         <span> Secodary Type</span>
         <span>{{ pokemonDetails?.type2 }}</span>
       </div>
 
       <div class="flex items-center space-x-4">
         <span> Weight</span>
-        <span>{{ pokemonDetails?.stats?.weight_kg }} kg</span>
+        <span>{{ pokemonDetails?.stats?.weight_km }} kg</span>
       </div>
       <div class="flex items-center space-x-4">
         <span> Height</span>
